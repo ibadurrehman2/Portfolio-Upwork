@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Content -->
+  <title>Ibadur Rehman | Senior Frontend Architect | React & Design Systems Expert</title>
+  <meta name="description" content="Senior Frontend Engineer with 9+ years of experience crafting high-performance web applications. Specialized in React, TypeScript, and architecting scalable design systems. Available for global collaborations.">
+  <meta name="keywords" content="Ibadur Rehman, Senior Frontend Engineer, Frontend Architect, React Developer, Design Systems, Web Performance, TypeScript, UI/UX Engineering">
+  <meta name="author" content="Ibadur Rehman">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rehman.dev/">
+  <meta property="og:title" content="Ibadur Rehman | Senior Frontend Architect">
+  <meta property="og:description" content="Architecting scalable digital ecosystems and high-performance web applications with 9+ years of expertise.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop">
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Sora', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            ultra: '#03251c',
+            lime: {
+              400: '#d9ff50',
+              500: '#c5e648',
+              600: '#a8c43d',
+            }
+          },
+          animation: {
+            'gradient-x': 'gradient-x 15s ease infinite',
+            'float': 'float 6s ease-in-out infinite',
+            'noise': 'noise 0.2s steps(2) infinite',
+          },
+          keyframes: {
+            'gradient-x': {
+              '0%, 100%': { 'background-position': '0% 50%' },
+              '50%': { 'background-position': '100% 50%' },
+            },
+            'float': {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            'noise': {
+              '0%': { transform: 'translate(0,0)' },
+              '10%': { transform: 'translate(-1%,-1%)' },
+              '20%': { transform: 'translate(-2%,1%)' },
+              '30%': { transform: 'translate(1%,-2%)' },
+              '40%': { transform: 'translate(-1%,3%)' },
+              '50%': { transform: 'translate(-2%,1%)' },
+              '60%': { transform: 'translate(3%,0)' },
+              '70%': { transform: 'translate(0,2%)' },
+              '80%': { transform: 'translate(-3%,0)' },
+              '90%': { transform: 'translate(2%,1%)' },
+              '100%': { transform: 'translate(1%,0)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+    .masonry-grid {
+      column-gap: 2rem;
+    }
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 2rem;
+    }
+    .grain {
+      position: fixed;
+      top: -100%;
+      left: -100%;
+      width: 300%;
+      height: 300%;
+      background: transparent url('https://grainy-gradients.vercel.app/noise.svg') repeat 0 0;
+      opacity: .01;
+      pointer-events: none;
+      z-index: 9999;
+      will-change: transform;
+    }
+    .dark .grain { opacity: 0.02; }
+    
+    .ease-zoom {
+      transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-ultra text-gray-900 dark:text-white transition-colors duration-500 overflow-x-hidden font-sans">
+  <div class="grain animate-noise"></div>
+  <div id="root"></div>
+</body>
+</html>
